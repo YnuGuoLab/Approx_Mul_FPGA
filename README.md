@@ -1,4 +1,4 @@
-This directory contains the Verilog HDL codes of this paper. There are two folders in this directory: 4x4 and 8x8. The detailed information is as follows:
+This directory contains the Verilog HDL codes of this paper. There are two folders in this directory: 4x4 and 8x8. The proposed design was coded with Verilog and synthesized for the xc7vx330tffg1157 device with Vivado 2019.1. The detailed information is as follows:
 
 # 4x4
    # src
