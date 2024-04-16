@@ -23,9 +23,10 @@ This directory contains the Verilog HDL codes of this paper. There are two folde
         - Contains the Verilog codes of three adders used to construct 8x8 multipliers.
         - Correspondence
           |  Filenames     |     Module name        |          Behavior                      
-          |   ACCA.v       |       add_acc          |       accurate adder                |
-          |   MODA.v       |     add_inexact        |    moderate approximate adder       |
-          |   NCCA.v       |       add_LUT2         |  pure LUT-based approximate adder   |
+          |   ACCA.v       |       add_acc          |       accurate adder                                 |
+          |   MODA.v       |     add_inexact        |    moderate approximate adder                        |
+          |   HSLP.v       |      add_hslp          |   High-bit carry save and low-bit carry predict adder|
+          |   NCCA.v       |       add_LUT2         |  pure LUT-based approximate adder                    |
    
    # src
          - Contains the Verilog codes of approximate 8x8 multipliers.
@@ -33,6 +34,7 @@ This directory contains the Verilog HDL codes of this paper. There are two folde
           |  Filenames     |   Module name     |                                       Behavior                                             |  
           |  ACCA_xxxx.v   |     ac_xxxx       | approximate 8x8 multiplier with ACCA adder summing the results of four 4x4 multipliers.    |
           |  MODA_xxxx.v   |    inexact_xxxx   | approximate 8x8 multiplier with MODA adder summing the results of four 4x4 multipliers.    |
+          |  HSLP_xxxx.v   |     HSLP_xxxx     | approximate 8x8 multiplier with HSLP adder summing the results of four 4x4 multipliers.    |
           |  NCCA_xxxx.v   |     LUT2_xxxx     | approximate 8x8 multiplier with NCCA adder summing the results of four 4x4 multipliers.    |
         * "xxxx" represents the order number of 4x4 approximate multiplier when constructing 8x8 multiplier.
   
@@ -52,6 +54,7 @@ This directory contains the Verilog HDL codes of this paper. There are two folde
           |  Filenames     |     Module name        |          Behavior                      
           |   ACCA_16.v       |       ACCA_16          |       accurate adder                |
           |   MODA_16.v       |      MODA_16        |    moderate approximate adder       |
+          |   HSLP_16.v       |       add_HSLP_16       | High-bit carry save and low-bit carry predict adder|
           |   NCCA_16.v       |       NCCA_16         |  pure LUT-based approximate adder   |
    
    # src
@@ -60,6 +63,7 @@ This directory contains the Verilog HDL codes of this paper. There are two folde
           |  Filenames     |   Module name     |                                       Behavior                                             |  
           |  ACCA_1111_16.v   |    ACCA_1111_16       | approximate 16x16 multiplier with ACCA adder summing the results of four 8x8 multipliers.    |
           |  MODA_1334_16.v   |     MODA_1334_16   | approximate 16x16 multiplier with MODA adder summing the results of four 8x8 multipliers.    |
+          |  HSLP_1134_16.v   |    HSLP_1134_16     | approximate 16x16 multiplier with HSLP adder summing the results of four 8x8 multipliers.    |
           |  NCCA_1134_16.v   |    NCCA_1134_16     | approximate 16x16 multiplier with NCCA adder summing the results of four 8x8 multipliers.    |
  
   
