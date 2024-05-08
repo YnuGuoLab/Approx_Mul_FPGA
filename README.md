@@ -77,8 +77,16 @@ This directory contains the Verilog HDL codes of this paper. There are two folde
     *** For example, when testing the performance and accuracy of ACCA_1111_16, please first add ACCA_1111.v, LSAM1.v, ACCA.v and testbench_multi16a.v to the same project file. Then, change the module name in the testbench to “ACCA_1111_16” and modify the input file path to the address of “input16”.
 
 ============
+
 This library provides accurate and approximate 4x4 multipliers, 8x8 multipliers, 16x16 multipliers and adders.
+
 For widespread usage, this library can be used to provide the multipliers and adders as elementary units to construct higher-order multiplier (e.g. 32x32).
-============ 
+
+============
+
+
+
+
+
 
 
